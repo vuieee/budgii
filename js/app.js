@@ -612,7 +612,7 @@ const Settings = {
         <div class="card">
           <div class="card-label" style="margin-bottom:12px;">Theme</div>
           <div class="chip-group" id="themeChips">
-            ${[['dark','DARK'],['pureblack','PURE BLACK'],['highcontrast','HIGH CONTRAST']].map(([v,n])=>`<button type="button" class="chip ${s.theme===v?'selected':''}" data-th="${v}">${n}</button>`).join('')}
+            ${[['dark','DARK'],['light','LIGHT'],['pureblack','PURE BLACK'],['highcontrast','HIGH CONTRAST']].map(([v,n])=>`<button type="button" class="chip ${s.theme===v?'selected':''}" data-th="${v}">${n}</button>`).join('')}
           </div>
         </div>
       </div>
@@ -636,7 +636,7 @@ const Settings = {
 
       <div class="card">
         <div class="card-label" style="margin-bottom:8px;">About</div>
-        <pre class="ascii-tag">[■□■] ASCII BUDGET — local-first, monochrome, zero tracking.</pre>
+        <pre class="ascii-tag">[b] BUDGII — local-first, monochrome, zero tracking.</pre>
       </div>
     `;
 
@@ -653,7 +653,7 @@ const Settings = {
       const blob = new Blob([JSON.stringify(Store.state, null, 2)], {type:'application/json'});
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
-      a.download = `ascii-budget-export-${Utils.todayStr()}.json`;
+      a.download = `budgii-export-${Utils.todayStr()}.json`;
       a.click();
       Toast.show('Data exported.');
     };

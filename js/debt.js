@@ -9,6 +9,8 @@ const Debt = {
   },
 
   interestAccumulated(debt, toDate = new Date()){
+    if(debt.interestType === 'none' || !debt.rate) return 0;
+
     const periods = this.periodsElapsed(debt, toDate);
     const r = (debt.rate||0)/100;
     if(debt.interestType === 'compound'){
@@ -139,7 +141,7 @@ const Debt = {
       <div class="field">
         <label>Interest Type</label>
         <div class="chip-group" id="typeChipsD">
-          ${['simple','compound'].map(t=>`<button type="button" class="chip ${editing&&editing.interestType===t?'selected':(!editing&&t==='simple'?'selected':'')}" data-t="${t}">${t.toUpperCase()}</button>`).join('')}
+          ${['none','simple','compound'].map(t=>`<button type="button" class="chip ${editing&&editing.interestType===t?'selected':(!editing&&t==='none'?'selected':'')}" data-t="${t}">${t.toUpperCase()}</button>`).join('')}
         </div>
       </div>
       <div class="field">
@@ -176,7 +178,7 @@ const Debt = {
       const dateBorrowed = document.getElementById('dDateBorrowed').value;
       const rate = parseFloat(document.getElementById('dRate').value) || 0;
       const dueDate = document.getElementById('dDue').value;
-      const interestType = document.getElementById('typeChipsD').querySelector('.chip.selected')?.dataset.t || 'simple';
+      const interestType = document.getElementById('typeChipsD').querySelector('.chip.selected')?.dataset.t || 'none';
       const interestFreq = document.getElementById('freqChipsD').querySelector('.chip.selected')?.dataset.f || 'monthly';
       const phone = document.getElementById('dPhone').value.trim();
       const status = document.getElementById('dStatus').value;
