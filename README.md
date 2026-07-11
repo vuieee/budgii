@@ -2,7 +2,7 @@
  
 # BUDGII
 
-  **A STYLIZED BUDGET TRACKER // WEB // ASCII ART**
+  **FINANCE // TRACKER // WEB // ASCII ART**
 
 <img src="assets/budgiiscreenshot.png" width="100%" alt="budgii header" />
 
