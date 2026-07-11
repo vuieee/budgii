@@ -17,9 +17,9 @@
                               /\____/       
                               \_/__/        
 ```
----
 A local-first personal finance tracker with a Nothing OS-inspired monochrome interface dot-matrix typography, no icons, ASCII art instead. Savings goals, budget tracking, debt tracking, and analytics, all running entirely in the browser with zero backend.
 
+---
 ## Features
 
 - **Dashboard** — current savings, remaining budget, debt owed, weekly/monthly spend, progress rings, mini chart, upcoming goal, recent activity feed
