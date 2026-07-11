@@ -3,10 +3,15 @@
 A local-first personal finance tracker with a Nothing OS-inspired monochrome interface — dot-matrix typography, no icons, ASCII art instead. Savings goals, budget tracking, debt tracking, and analytics, all running entirely in the browser with zero backend.
 
 ```
- _____ _____ _____ _____ _____   ____  _   _ ____   ____ _____ _____
-|  _  |   __|     |     |     | | __ )| | | |  _ \ / ___| ____|_   _|
-|     |__   |    [ -   -|   --| |  _ \| | | | | | | |  _|  _|   | |
-|__|__|_____|_____|_____|_____| |____/ \___/|____/ \____|_____|  |_|
+ __                  __                     
+/\ \                /\ \          __  __    
+\ \ \____  __  __   \_\ \     __ /\_\/\_\   
+ \ \ '__`\/\ \/\ \  /'_` \  /'_ `\/\ \/\ \  
+  \ \ \L\ \ \ \_\ \/\ \L\ \/\ \L\ \ \ \ \ \ 
+   \ \_,__/\ \____/\ \___,_\ \____ \ \_\ \_\
+    \/___/  \/___/  \/__,_ /\/___L\ \/_/\/_/
+                              /\____/       
+                              \_/__/        
 ```
 
 ## Features
