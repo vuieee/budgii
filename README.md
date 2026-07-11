@@ -1,6 +1,10 @@
-# ASCII Budget
+<div align="center">
+ 
+# BUDGII
 
-A local-first personal finance tracker with a Nothing OS-inspired monochrome interface — dot-matrix typography, no icons, ASCII art instead. Savings goals, budget tracking, debt tracking, and analytics, all running entirely in the browser with zero backend.
+  **A STYLIZED BUDGET TRACKER // WEB // ASCII ART**
+
+</div>
 
 ```
  __                  __                     
@@ -13,6 +17,8 @@ A local-first personal finance tracker with a Nothing OS-inspired monochrome int
                               /\____/       
                               \_/__/        
 ```
+---
+A local-first personal finance tracker with a Nothing OS-inspired monochrome interface — dot-matrix typography, no icons, ASCII art instead. Savings goals, budget tracking, debt tracking, and analytics, all running entirely in the browser with zero backend.
 
 ## Features
 
