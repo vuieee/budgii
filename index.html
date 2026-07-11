@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASCII Budget</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="dark" data-fontsize="md">
+
+<div id="splash">
+<pre id="splashArt"> _____ _____ _____ _____ _____   ____  _   _ ____   ____ _____ _____
+|  _  |   __|     |     |     | | __ )| | | |  _ \ / ___| ____|_   _|
+|     |__   |     |-   -|   --| |  _ \| | | | | | | |  _|  _|   | |
+|__|__|_____|_____|_____|_____| |____/ \___/|____/ \____|_____|  |_|
+</pre>
+<div id="splashBar"><div id="splashFill"></div></div>
+<p id="splashLabel">LOADING LEDGER...</p>
+</div>
+
+<div id="app" class="hidden">
+
+  <button id="hamburger" class="hamburger" aria-label="Toggle navigation">
+    <pre>≡</pre>
+  </button>
+
+  <nav id="drawer" class="drawer">
+    <div class="drawer-brand">
+      <pre class="brand-mark">[■□■]</pre>
+      <span>ASCII BUDGET</span>
+    </div>
+    <ul class="nav-list">
+      <li><button class="nav-item active" data-view="dashboard"><span class="nav-caret">&gt;</span> Dashboard</button></li>
+      <li><button class="nav-item" data-view="savings"><span class="nav-caret">&gt;</span> Savings Goals</button></li>
+      <li><button class="nav-item" data-view="budget"><span class="nav-caret">&gt;</span> Budget Tracker</button></li>
+      <li><button class="nav-item" data-view="debt"><span class="nav-caret">&gt;</span> Debt Tracker</button></li>
+      <li><button class="nav-item" data-view="analytics"><span class="nav-caret">&gt;</span> Analytics</button></li>
+      <li><button class="nav-item" data-view="settings"><span class="nav-caret">&gt;</span> Settings</button></li>
+    </ul>
+    <div class="drawer-footer">
+      <pre id="autosaveIndicator" class="autosave-indicator">[ saved ]</pre>
+      <p class="quote" id="financialQuote"></p>
+    </div>
+  </nav>
+
+  <div id="scrim" class="scrim"></div>
+
+  <main id="main">
+    <header class="topbar">
+      <div class="search-wrap">
+        <span class="search-glyph">/</span>
+        <input id="globalSearch" type="text" placeholder="Search goals, expenses, debt, notes... (press /)" autocomplete="off">
+      </div>
+      <div class="topbar-right">
+        <span id="todayDate" class="today-date"></span>
+      </div>
+    </header>
+
+    <div id="searchResults" class="search-results hidden"></div>
+
+    <section id="view-dashboard" class="view active"></section>
+    <section id="view-savings" class="view"></section>
+    <section id="view-budget" class="view"></section>
+    <section id="view-debt" class="view"></section>
+    <section id="view-analytics" class="view"></section>
+    <section id="view-settings" class="view"></section>
+  </main>
+
+  <button id="quickAddBtn" class="quick-add-btn" title="Quick Add (Q)">
+    <pre>+</pre>
+  </button>
+
+  <div id="quickAddMenu" class="quick-add-menu hidden">
+    <button data-quick="expense">+ Expense</button>
+    <button data-quick="goal">+ Savings Goal</button>
+    <button data-quick="debt">+ Debt Entry</button>
+    <button data-quick="contribution">+ Contribution</button>
+  </div>
+
+  <div id="toastStack" class="toast-stack"></div>
+
+  <div id="modalRoot" class="modal-root hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box" id="modalBox"></div>
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.umd.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/calendar.js"></script>
+<script src="js/savings.js"></script>
+<script src="js/budget.js"></script>
+<script src="js/debt.js"></script>
+<script>Core.boot();</script>
+</body>
+</html>
