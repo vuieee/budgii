@@ -76,9 +76,7 @@ const Debt = {
 
       ${debts.length ? `<div class="grid grid-2" id="debtGrid"></div>` : `
         <div class="empty-state">
-          <pre>+-----------+
-| YOU OWE?  |
-+-----------+</pre>
+          <pre>[::DEBT::]</pre>
           <p>No debts tracked yet. Add an entry to start monitoring interest and payments.</p>
           <button class="btn btn-primary" id="newDebtBtn2">+ ADD FIRST ENTRY</button>
         </div>`}
