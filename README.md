@@ -1,14 +1,15 @@
-# ASCII Budget
+<div align="center">
+ 
+# BUDGII
 
-A local-first personal finance tracker with a Nothing OS-inspired monochrome interface — dot-matrix typography, no icons, ASCII art instead. Savings goals, budget tracking, debt tracking, and analytics, all running entirely in the browser with zero backend.
+  **FINANCE // TRACKER // WEB // ASCII ART**
 
-```
- _____ _____ _____ _____ _____   ____  _   _ ____   ____ _____ _____
-|  _  |   __|     |     |     | | __ )| | | |  _ \ / ___| ____|_   _|
-|     |__   |    [ -   -|   --| |  _ \| | | | | | | |  _|  _|   | |
-|__|__|_____|_____|_____|_____| |____/ \___/|____/ \____|_____|  |_|
-```
+<img src="assets/budgiiscreenshot.png" width="100%" alt="budgii header" />
 
+</div>
+A local-first personal finance tracker with a Nothing OS-inspired monochrome interface dot-matrix typography, no icons, ASCII art instead. Savings goals, budget tracking, debt tracking, and analytics, all running entirely in the browser with zero backend.
+
+---
 ## Features
 
 - **Dashboard** — current savings, remaining budget, debt owed, weekly/monthly spend, progress rings, mini chart, upcoming goal, recent activity feed
