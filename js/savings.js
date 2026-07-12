@@ -111,14 +111,6 @@ const Savings = {
       </div>
       ${goals.length ? `<div class="grid grid-3" id="goalsGrid"></div>` : `
         <div class="empty-state">
-<pre style="font-size:14px; line-height:1.1; margin-bottom:12px;">
-   /\  /\   
-  /  \/  \  
- /        \ 
- \        / 
-  \  /\  /  
-   \/  \/   
-</pre>
           <p>No savings goals yet. Create one to start tracking contributions on the calendar.</p>
           <button class="btn btn-primary" id="newGoalBtn2">+ CREATE FIRST GOAL</button>
         </div>`}
